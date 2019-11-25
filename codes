@@ -1,0 +1,31 @@
+npm install bootstrap
+npm install jquery
+npm install jquery-zoom
+npm install slick-carousel
+npm install nouislider
+npm install font-awesome
+npm install @fortawesome/fontawesome-free
+npm install popper.js
+
+
+
+
+"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/slick-carousel/slick/slick.css",
+              "./node_modules/slick-carousel/slick/slick-theme.css",
+              "./node_modules/nouislider/distribute/nouislider.min.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "./src/assets/fonts/montserrat.css"
+            ],
+            "scripts": [
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery-zoom/jquery.zoom.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "./node_modules/slick-carousel/slick/slick.min.js",
+              "./node_modules/nouislider/distribute/nouislider.min.js"
+            ]
