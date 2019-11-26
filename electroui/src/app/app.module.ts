@@ -10,6 +10,7 @@ import { CarauselComponent } from './components/carausel/carausel.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeadlineComponent } from './components/homepage/headline/headline.component';
 import { TopSellingComponent } from './components/homepage/top-selling/top-selling.component';
+import { HotDealComponent } from './components/homepage/hot-deal/hot-deal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TopSellingComponent } from './components/homepage/top-selling/top-selli
     CarauselComponent,
     HomepageComponent,
     HeadlineComponent,
-    TopSellingComponent
+    TopSellingComponent,
+    HotDealComponent
   ],
   imports: [
     BrowserModule,
