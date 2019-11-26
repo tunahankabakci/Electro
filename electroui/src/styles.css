@@ -321,10 +321,7 @@ textarea.input {
   width: 100%;
 }
 
-.section-title .section-nav .products-slick-nav {
-  top: 0px;
-  right: 0px;
-}
+
 
 /*----------------------------*\
 	Breadcrumb
@@ -405,8 +402,24 @@ textarea.input {
   height: auto;
 }
 
-.products-slick-nav {
-  position: absolute;
-  right: 15px;
-  z-index: 10;
+
+
+.products-slick-nav .slick-prev, .products-slick-nav .slick-next {
+  position: static;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  width: 20px;
+  height: 20px;
+  display: inline-block !important;
+  margin: 0px 2px;
 }
+
+.products-slick-nav .slick-prev:before, .products-slick-nav .slick-next:before {
+  font-size: 14px;
+}
+
+
+
+
+

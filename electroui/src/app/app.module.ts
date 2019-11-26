@@ -11,6 +11,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeadlineComponent } from './components/homepage/headline/headline.component';
 import { TopSellingComponent } from './components/homepage/top-selling/top-selling.component';
 import { HotDealComponent } from './components/homepage/hot-deal/hot-deal.component';
+import { TopSellingWidgetComponent } from './components/homepage/top-selling-widget/top-selling-widget.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HotDealComponent } from './components/homepage/hot-deal/hot-deal.compon
     HomepageComponent,
     HeadlineComponent,
     TopSellingComponent,
-    HotDealComponent
+    HotDealComponent,
+    TopSellingWidgetComponent
   ],
   imports: [
     BrowserModule,
