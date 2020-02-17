@@ -21,6 +21,7 @@ import { AsideComponent } from './components/store/aside/aside.component';
 import { PrdctsComponent } from './components/store/prdcts/prdcts.component';
 import { PrdctComponent } from './components/store/prdcts/prdct/prdct.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     StoreComponent,
     AsideComponent,
     PrdctsComponent,
-    PrdctComponent
+    PrdctComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
