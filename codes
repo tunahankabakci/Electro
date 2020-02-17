@@ -6,6 +6,7 @@ npm install nouislider
 npm install font-awesome
 npm install @fortawesome/fontawesome-free
 npm install popper.js
+npm install ngx-pagination
 
 
 

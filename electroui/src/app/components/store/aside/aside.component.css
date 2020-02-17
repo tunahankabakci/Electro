@@ -1,0 +1,88 @@
+/*----------------------------*\
+	Aside
+\*----------------------------*/
+
+h3{
+  color: #2B2D42;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.aside{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+.aside+.aside {
+    margin-top: 30px;
+  }
+  
+  .aside>.aside-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 15px 0px 30px;
+  }
+  
+  /*-- checkbox Filter --*/
+  
+  .checkbox-filter>div+div {
+    margin-top: 10px;
+  }
+  
+  .checkbox-filter .input-radio label, .checkbox-filter .input-checkbox label {
+    font-size: 12px;
+  }
+  
+  .checkbox-filter .input-radio label small, .checkbox-filter .input-checkbox label small {
+    color: #8D99AE;
+  }
+  
+  /*-- Price Filter --*/
+  
+  #price-slider {
+    margin-bottom: 15px;
+  }
+  
+  .noUi-target {
+    background-color: #FFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #E4E7ED;
+    border-radius: 0px;
+  }
+  
+  .noUi-connect {
+    background-color: #D10024;
+  }
+  
+  .noUi-horizontal {
+    height: 6px;
+  }
+  
+  .noUi-horizontal .noUi-handle {
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    border: none;
+    background: #D10024;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 75%;
+  }
+
+  .noUi-handle-upper{
+    margin-right: 7px;
+  }
+  .noUi-handle-lower{
+    margin-right: 7px;
+  }
+  
+  .noUi-handle:before, .noUi-handle:after {
+    display: none;
+  }
+  
+  .price-filter .input-number {
+    display: inline-block;
+    width: calc(50% - 7px);
+  }

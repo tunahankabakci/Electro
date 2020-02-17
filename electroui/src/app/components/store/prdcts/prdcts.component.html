@@ -1,0 +1,10 @@
+<!-- /store bottom filter -->
+<ul class="row">
+    <li *ngFor="let item of collection | paginate: { itemsPerPage: 9, currentPage: p }" class="col-md-4 col-xs-6">
+        <app-prdct></app-prdct>
+    </li>
+</ul>
+<pagination-controls (pageChange)="p = $event" autoHide="true" responsive="true" previousLabel="<"
+    nextLabel=">" class="d-flex justify-content-center pagination mb-3" >
+</pagination-controls>
+<!-- /STORE -->

@@ -1,0 +1,99 @@
+/*----------------------------*\
+	Store
+\*----------------------------*/
+
+.store-filter {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  /*-- Store Sort --*/
+  
+  .store-sort {
+    display: inline-block;
+  }
+  
+  .store-sort label {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+  }
+  
+  /*-- Store Grid --*/
+  
+  .store-grid {
+    float: right;
+  }
+  
+  .store-grid li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFF;
+    border: 1px solid #E4E7ED;
+    text-align: center;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .store-grid li+li {
+    margin-left: 5px;
+  }
+  
+  .store-grid li:hover {
+    background-color: #E4E7ED;
+    color: #D10024;
+  }
+  
+  .store-grid li.active {
+    background-color: #D10024;
+    border-color: #D10024;
+    color: #FFF;
+    cursor: default;
+  }
+  
+  .store-grid li a {
+    display: block;
+  }
+  
+  /*-- Store Pagination --*/
+
+
+  .pagination li a{
+    text-decoration: none;
+    outline: none;
+  }
+
+  .pagination .current{
+    background:#D10024!important;
+    border: 1px solid #D10024;
+  }
+
+  .pagination a:hover{
+    color: #D10024;
+  }
+
+ .pagination .pagination-next a::after , .pagination .pagination-previous a::before,
+ .pagination .pagination-previous.disabled::before , .pagination .pagination-next.disabled::after{
+   content: none!important;
+ }
+
+
+.pagination li+li, .pagination-previous.disabled, .pagination-previous {
+  margin-left: 5px;
+  border: 1px solid #E4E7ED;
+  text-align: center;
+  background: #FFF;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 2rem;
+}
+
+.pagination li:hover {
+  background-color: #E4E7ED;
+}

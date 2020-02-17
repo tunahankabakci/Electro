@@ -17,6 +17,10 @@ import { ProductPageComponent } from './components/product-page/product-page.com
 import { ProductViewComponent } from './components/product-page/product-view/product-view.component';
 import { FormsModule } from '@angular/forms';
 import { StoreComponent } from './components/store/store.component';
+import { AsideComponent } from './components/store/aside/aside.component';
+import { PrdctsComponent } from './components/store/prdcts/prdcts.component';
+import { PrdctComponent } from './components/store/prdcts/prdct/prdct.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,15 @@ import { StoreComponent } from './components/store/store.component';
     ProductPageComponent,
     ProductViewComponent,
     StoreComponent,
+    AsideComponent,
+    PrdctsComponent,
+    PrdctComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
