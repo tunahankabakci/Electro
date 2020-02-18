@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
-import { CarauselComponent } from './components/carausel/carausel.component';
+import { CarauselComponent } from './components/homepage/carausel/carausel.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeadlineComponent } from './components/homepage/headline/headline.component';
 import { TopSellingComponent } from './components/homepage/top-selling/top-selling.component';
