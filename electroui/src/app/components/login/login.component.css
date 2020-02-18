@@ -408,7 +408,7 @@
   
   .alert-validate::after {
     content: "\f06a";
-    font-family: "Montserrat", sans-serif;
+    font-family: "fontawesome", sans-serif;
     display: block;
     position: absolute;
     color: #c80000;

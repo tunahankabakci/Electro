@@ -50,17 +50,27 @@ export class RegisterComponent implements OnInit {
           ) {
             return false;
           }
-        } else if (
-          $(input).attr("type") == "name" ||
-          $(input).attr("name") == "name" ||
-          $(input).attr("type") == "surname" ||
-          $(input).attr("name") == "surname"
-        ) {
+        } else if ($(input).attr("name") == "name") {
           if (
             $(input)
               .val()
               .trim()
-              .match(/^[a-zA-Z]*$/) == null
+              .match(/^[a-zA-Z]*$/) == null ||
+              $(input)
+              .val()
+              .trim()==""
+          ) {
+            return false;
+          }
+        } else if ($(input).attr("name") == "surname") {
+          if (
+            $(input)
+              .val()
+              .trim()
+              .match(/^[a-zA-Z]*$/) == null ||
+              $(input)
+              .val()
+              .trim()==""
           ) {
             return false;
           }
