@@ -22,6 +22,8 @@ import { PrdctsComponent } from './components/store/prdcts/prdcts.component';
 import { PrdctComponent } from './components/store/prdcts/prdct/prdct.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     AsideComponent,
     PrdctsComponent,
     PrdctComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
