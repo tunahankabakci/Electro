@@ -3,3 +3,8 @@ npm install express
 npm isntall mongoose
 npm install nodemon
 npm install body-parser
+npm install bcrypt.js
+npm install validator
+npm install Jsonwebtoken
+npm install env-cmd
+npm install mongodb
