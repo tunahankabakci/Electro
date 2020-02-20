@@ -1,53 +1,80 @@
-<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="../../../assets/login.png" alt="IMG">
+<div class="bg">
+	<br><br><br>
+
+	<div class="col-12 col-md-8 col-lg-6 col-xl-6 m-auto bg-white radius">
+		<div class="w-100 h-100 d-flex justify-content-center align-items-center">
+			<div class="w-100 tab-content">
+				<div class="tab-pane container active" id="login">
+					<form class="login-form mt-4">
+						<h1 class="text-center mt-1">Sign in</h1>
+						<div class="form-group relative mt-4">
+							<input class="form-control input-lg" id="login_email" placeholder="E-mail Address"
+								required="" type="email" />
+							<i class="log-ico fas fa-envelope"></i>
+						</div>
+						<div class="form-group relative mt-3">
+							<input class="form-control input-lg" id="login_password" placeholder="Password" required=""
+								type="password" />
+							<i class="log-ico fa fa-lock"></i>
+						</div>
+						<div class="form-group mt-4">
+							<button class="btn-lg btn-block lgn-btn" type="submit">
+								Sign in
+							</button>
+						</div>
+						<hr />
+						<div class="text-center">
+							<label><a href="#" >Forgot your password?</a></label>
+						</div>
+						<div class="text-center">
+							<label><a class="nav-link" id="goRegisterBtn" (click)="removeActive('goRegisterBtn')" data-toggle="tab" href="#register">Create an Account</a></label>
+						</div>
+						<hr>
+						<h3 class="text-center">Or</h3>
+						<div class="form-group d-flex justify-content-center align-items-center">
+							<a class="button button--social-login button--facebook" href="#"><i
+									class="icon fab fa-facebook-f"></i>Sign in With Facebook</a>
+							<a class="button button--social-login button--googleplus" href="#"><i
+									class="icon fab fa-google"></i>Sign in With Google</a>
+							<a class="button button--social-login button--twitter" href="#"><i
+									class="icon fab fa-twitter"></i>Sign in With Twitter</a>
+						</div>
+					</form>
 				</div>
-
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Member Login
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Email / Password ?
-						</a>
-					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="/register">
-							Create an Account
-							<i class="fas fa-long-arrow-alt-right"></i>
-						</a>
-					</div>
-				</form>
+				<div class="tab-pane container fade" id="register">
+					<form class="login-form mt-4">
+						<h1 class="text-center mt-1s">Sign Up</h1>
+						<div class="form-group relative mt-4">
+							<input class="form-control input-lg" id="fullname" placeholder="Full Name"
+								required="" type="text" />
+							<i class="log-ico fas fa-id-card"></i>
+						</div>
+						<div class="form-group relative mt-4">
+							<input class="form-control input-lg" id="username" placeholder="Username"
+								required="" type="text" />
+							<i class="log-ico fa fa-user"></i>
+						</div>
+						<div class="form-group relative mt-4">
+							<input class="form-control input-lg" id="login_email" placeholder="E-mail Address"
+								required="" type="email" />
+							<i class="log-ico fas fa-envelope"></i>
+						</div>
+						<div class="form-group relative mt-3">
+							<input class="form-control input-lg" id="login_password" placeholder="Password" required=""
+								type="password" />
+							<i class="log-ico fa fa-lock"></i>
+						</div>
+						<div class="form-group mt-4">
+							<button class="btn-lg btn-block lgn-btn" type="submit">
+								Sign Up
+							</button>
+						</div>
+						<div class="text-center">
+							<label><a class="nav-link" id="goLoginBtn" (click)="removeActive('goLoginBtn')" data-toggle="tab" href="#login">Allready have an Account?</a></label>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
+	<br><br><br>
