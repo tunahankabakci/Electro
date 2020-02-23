@@ -30,8 +30,10 @@
               "./node_modules/slick-carousel/slick/slick-theme.css",
               "./node_modules/nouislider/distribute/nouislider.min.css",
               "./node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "./src/assets/fonts/montserrat.css"
+              "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "./src/assets/fonts/montserrat.css",
+              "./node_modules/alertifyjs/build/css/alertify.min.css",
+              "./node_modules/alertifyjs/build/css/themes/bootstrap.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -41,7 +43,9 @@
               "./node_modules/slick-carousel/slick/slick.min.js",
               "./node_modules/nouislider/distribute/nouislider.min.js",
               "./node_modules/jquery-zoom/jquery.zoom.min.js",
-              "./node_modules/tilt.js/dest/tilt.jquery.min.js"
+              "./node_modules/tilt.js/dest/tilt.jquery.min.js",
+              "./node_modules/validator/validator.min.js",
+              "./node_modules/alertifyjs/build/alertify.min.js"
             ]
           },
           "configurations": {

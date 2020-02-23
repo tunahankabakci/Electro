@@ -26,9 +26,8 @@ router.post('/users/login', async(req, res) => {
         const token = await user.generateAuthToken()
         res.send({ user, token })
     } catch (error) {
-        res.status(400).send(error)
+        res.status(401).send({error: 'Login failed! Check authentication credentials'})
     }
-
 })
 
 
@@ -39,7 +38,7 @@ router.get('/users/profile', auth, async(req, res) => {
 
 
 
-router.post('/users/me/logout', auth, async (req, res) => {
+router.post('/users/logout', auth, async (req, res) => {
     // Log user out of the application
     try {
         req.user.tokens = req.user.tokens.filter((token) => {
@@ -53,7 +52,7 @@ router.post('/users/me/logout', auth, async (req, res) => {
 })
 
 
-router.post('/users/me/logoutall', auth, async(req, res) => {
+router.post('/users/logoutall', auth, async(req, res) => {
     // Log user out of all devices
     try {
         req.user.tokens.splice(0, req.user.tokens.length)

@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { CustomFormsModule } from 'ngx-custom-validators';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +24,7 @@ import { PrdctComponent } from './components/store/prdcts/prdct/prdct.component'
 import {NgxPaginationModule} from 'ngx-pagination';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +47,15 @@ import { LoginComponent } from './components/login/login.component';
     PrdctComponent,
     CheckoutComponent,
     LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    HttpClientModule,
+    CustomFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
