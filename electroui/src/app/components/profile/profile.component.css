@@ -1,0 +1,24 @@
+
+#navbar ul li {
+  font-size: 14px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  border: none;
+}
+#navbar ul li .active {
+  color: #d10024;
+  border: none;
+}
+#navbar ul li :hover {
+  color: #d10024;
+  border: none;
+}
+#navbar ul li a span {
+  font-size: 24px;
+}
+#navbar ul li a {
+  color: #2b2d42;
+  font-weight: 500;
+}
+

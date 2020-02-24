@@ -32,7 +32,8 @@ label a:focus {
   position: relative;
 }
 
-.login-form input:focus + .fa {
+.login-form input:focus + .fa,
+.login-form input:focus + .fas {
   color: #d10024;
 }
 

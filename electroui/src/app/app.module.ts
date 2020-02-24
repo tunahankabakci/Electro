@@ -25,6 +25,10 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { OrdersComponent } from './components/profile/orders/orders.component';
+import { AdressesComponent } from './components/profile/adresses/adresses.component';
+import { WishlistComponent } from './components/profile/wishlist/wishlist.component';
+import { AccountComponent } from './components/profile/account/account.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,10 @@ import { ProfileComponent } from './components/profile/profile.component';
     CheckoutComponent,
     LoginComponent,
     ProfileComponent,
+    OrdersComponent,
+    AdressesComponent,
+    WishlistComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

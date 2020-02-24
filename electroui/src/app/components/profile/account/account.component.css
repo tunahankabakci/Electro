@@ -1,0 +1,74 @@
+.relative {
+    position: relative;
+  }
+  
+  .login-form input:focus + .fa,
+  .login-form input:focus + .fas {
+    color: #d10024;
+  }
+  
+  .login-form .log-ico {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    line-height: 52px;
+    color: #2b2d42;
+    z-index: 100;
+    font-size: 16px;
+  }
+  
+  .login-form .input-lg {
+    font-size: 16px;
+    height: 52px;
+    padding: 10px 25px;
+    border-radius: 0;
+    background-color: #EEEEEE;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .login-form input[type="text"],
+  .login-form input:focus {
+    border: 0px solid #4a525f;
+    color: #4a525f;
+    border-left: 45px solid #93a5ab;
+    border-radius: 40px;
+  }
+  
+  .login-form input:focus {
+    border-left: 45px solid #eee;
+  }
+
+  .lgn-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d10024;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .lgn-btn:focus,
+  .lgn-btn:hover,
+  .lgn-btn.active,
+  .lgn-btn.active:hover,
+  .lgn-btn:active:hover,
+  .lgn-btn:active:focus,
+  .lgn-btn:active {
+    background-color: #d10024;
+    border-color: #d10024;
+    box-shadow: 0px 5px 35px -5px #d10024;
+    text-shadow: 0 0 5px #fff;
+    color: #fff;
+    outline: none;
+  }
+  
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+  
+  
