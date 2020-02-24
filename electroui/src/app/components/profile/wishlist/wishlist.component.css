@@ -235,7 +235,6 @@
   .product .add-to-cart .add-to-cart-btn:hover > i {
     opacity: 1;
     visibility: visible;
-    z-index: -1;
   }
   
   
