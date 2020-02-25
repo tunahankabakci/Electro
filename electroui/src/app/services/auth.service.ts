@@ -22,7 +22,7 @@ export class AuthService {
     console.log(user)
     this.http.post(this.path + `/users/login`, user, { headers: headers }).subscribe((data) => {
       if (data['token'] && data['user']) {
-        localStorage.setItem('currentUser', JSON.stringify(data['user']));
+        localStorage.setItem('currentUser', data['token']);
         alertify.success('Succesfully login. Redirecting to homepage!');
         setTimeout(() => {
           this.router.navigateByUrl("") //homepage
@@ -41,6 +41,10 @@ export class AuthService {
     setTimeout(() => {
       window.location.reload();
     }, 2500)
+  }
+
+  get token(){
+    return localStorage.getItem('currentUser')
   }
 
 
