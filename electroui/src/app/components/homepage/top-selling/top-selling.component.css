@@ -6,6 +6,12 @@
 	product
 \*----------------------------*/
 
+a:hover,
+a:focus{
+  text-decoration: none;
+}
+
+
 .product {
   position: relative;
   margin: 15px 0px;
@@ -18,6 +24,10 @@
 .product:hover {
   -webkit-box-shadow: 0px 0px 6px 0px #e4e7ed, 0px 0px 0px 2px #d10024;
   box-shadow: 0px 0px 6px 0px #e4e7ed, 0px 0px 0px 2px #d10024;
+}
+
+.product:focus{
+  outline:none
 }
 
 .product .product-img {
@@ -142,6 +152,10 @@
   color: #1e1f29;
 }
 
+.product .product-body .product-btns > button:focus{
+  outline: none;
+}
+
 .product .product-body .product-btns > button:hover {
   background-color: #e4e7ed;
   color: #d10024;
@@ -236,4 +250,5 @@
   opacity: 1;
   visibility: visible;
 }
+
 

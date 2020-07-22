@@ -52,7 +52,11 @@
     border: none;
     border-radius: 0px 40px 40px 0px;
   }
-  
+
+  .newsletter form .newsletter-btn:focus{
+    outline:none
+  }
+
   .newsletter .newsletter-follow {
     text-align: center;
   }
