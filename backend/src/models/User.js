@@ -2,51 +2,55 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const Order = require("./Order").schema;
 
 const userSchema = mongoose.Schema({
   fullname: {
     type: String,
     required: true,
     trim: true,
-    max:30,
-    min:5
+    max: 30,
+    min: 5,
   },
   username: {
     type: String,
     required: true,
     trim: true,
     unique: true,
-    max:15,
-    min:3
+    max: 15,
+    min: 3,
   },
   email: {
     type: String,
     required: true,
     unique: true,
     lowercase: true,
-    trim:true,
-    validate: value => {
+    trim: true,
+    validate: (value) => {
       if (!validator.isEmail(value)) {
         throw new Error({ error: "Invalid Email address" });
       }
-    }
+    },
   },
   password: {
     type: String,
-    required: true
+    required: true,
   },
+  orders:[{
+    type:Order
+  }],
   createdAt: {
     type: Date,
-    default: Date.now()
+    default: Date.now(),
   },
   tokens: [
     {
       token: {
         type: String,
-        required: true
-      }
-    }
-  ]
+        required: true,
+      },
+    },
+  ],
 });
 
 userSchema.pre("save", async function (next) {
@@ -71,7 +75,7 @@ userSchema.statics.findByCredentials = async (email, password) => {
   // Search for a user by email and password.
   const user = await User.findOne({ email });
   if (!user) {
-    throw new Error({ error: "Invalid login credentials"});
+    throw new Error({ error: "Invalid login credentials" });
   }
   const isPasswordMatch = await bcrypt.compare(password, user.password);
   if (!isPasswordMatch) {
@@ -80,5 +84,5 @@ userSchema.statics.findByCredentials = async (email, password) => {
   return user;
 };
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema,'users');
 module.exports = User;

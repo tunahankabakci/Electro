@@ -30,7 +30,8 @@ import { AdressesComponent } from './components/profile/adresses/adresses.compon
 import { WishlistComponent } from './components/profile/wishlist/wishlist.component';
 import { AccountComponent } from './components/profile/account/account.component';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
-import { AuthService } from './services/auth.service';
+
+
 
 @NgModule({
   declarations: [
