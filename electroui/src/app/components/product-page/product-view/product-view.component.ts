@@ -17,7 +17,7 @@ export class ProductViewComponent implements OnInit {
     private productService: ProductService
   ) {}
   qty: number = 1;
-  product: Product=<Product>{};
+  product: Product=<Product>{}
   test = "asd";
 
   qtyUp() {
@@ -36,7 +36,7 @@ export class ProductViewComponent implements OnInit {
         this.productService.getProductData(params.id).subscribe(
           (data: Product) => {
             this.product = data
-            console.log("test")
+            console.log(this.product)
           },
           (error) => {
             alertify.error("The product can not find. Redirecting to homepage!");
